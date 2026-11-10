@@ -1,0 +1,328 @@
+/* Tampilan khusus halaman admin */
+body.admin-page {
+    background: #f2f5f3;
+    color: #1e3028;
+}
+
+/* Header */
+.admin-page .admin-topbar {
+    background: #103e31;
+    box-shadow: 0 3px 14px rgba(12, 48, 36, 0.14);
+}
+
+.admin-page .admin-topbar-inner {
+    max-width: 1440px;
+    min-height: 72px;
+    gap: 20px;
+}
+
+.admin-page .admin-nav {
+    gap: 14px;
+}
+
+.admin-page .admin-account {
+    background: rgba(255, 255, 255, 0.1);
+    border: 0;
+    border-radius: 999px;
+    padding: 8px 12px;
+}
+
+/* Area utama */
+.admin-page .admin-shell {
+    max-width: 1440px;
+    padding-top: 38px;
+    padding-bottom: 64px;
+}
+
+.admin-page .admin-heading {
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+
+.admin-page .admin-heading h1 {
+    font-size: clamp(30px, 3vw, 42px);
+    line-height: 1.1;
+}
+
+.admin-page .admin-heading-actions {
+    flex-shrink: 0;
+}
+
+/* Kotak ringkasan */
+.admin-page .admin-stats {
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.admin-page .admin-stats article {
+    background: #fff;
+    border: 1px solid #dfe8e1;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(19, 51, 37, 0.04);
+    min-width: 0;
+    padding: 20px;
+}
+
+.admin-page .admin-stats span {
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.admin-page .admin-stats strong {
+    font-size: clamp(19px, 1.7vw, 25px);
+    line-height: 1.25;
+}
+
+/* Kartu dan form */
+.admin-page .admin-card,
+.admin-page .admin-login {
+    background: #fff;
+    border: 1px solid #dfe8e1;
+    border-radius: 12px;
+    box-shadow: 0 7px 22px rgba(19, 51, 37, 0.05);
+    min-width: 0;
+}
+
+.admin-page .admin-settings-grid {
+    align-items: stretch;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.admin-page .store-contact-form,
+.admin-page .account-security-form {
+    align-content: start;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr;
+    padding: 24px;
+}
+
+.admin-page .store-contact-form > div,
+.admin-page .account-security-form > div:first-of-type,
+.admin-page .security-fields {
+    grid-column: auto;
+}
+
+.admin-page .store-contact-form button,
+.admin-page .account-security-form button {
+    justify-self: start;
+    min-height: 42px;
+}
+
+.admin-page .security-fields {
+    gap: 12px;
+    grid-template-columns: 1fr;
+}
+
+.admin-page label {
+    min-width: 0;
+}
+
+.admin-page input,
+.admin-page select,
+.admin-page textarea {
+    max-width: 100%;
+    min-width: 0;
+}
+
+.admin-page input[type="file"] {
+    line-height: 1.4;
+}
+
+.admin-page .admin-workspace {
+    gap: 18px;
+    grid-template-columns: minmax(340px, 0.75fr) minmax(0, 1.25fr);
+    margin-top: 20px;
+}
+
+.admin-page .book-editor,
+.admin-page .inventory-panel,
+.admin-page .orders-admin {
+    padding: 24px;
+}
+
+.admin-page .book-editor {
+    gap: 15px;
+}
+
+.admin-page .editor-heading,
+.admin-page .inventory-heading {
+    gap: 14px;
+}
+
+.admin-page .form-grid {
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.admin-page .cover-control {
+    border-radius: 9px;
+    grid-template-columns: 88px minmax(0, 1fr);
+}
+
+.admin-page .cover-control label {
+    display: grid;
+    gap: 7px;
+}
+
+/* Tabel: tetap bisa digeser pada layar kecil */
+.admin-page .table-wrap {
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.admin-page table {
+    min-width: 720px;
+    width: 100%;
+}
+
+.admin-page th,
+.admin-page td {
+    padding: 14px 10px;
+}
+
+.admin-page th {
+    background: #f7faf7;
+    white-space: nowrap;
+}
+
+.admin-page td {
+    overflow-wrap: anywhere;
+}
+
+.admin-page .inventory-actions,
+.admin-page .row-actions {
+    gap: 7px;
+}
+
+.admin-page .inventory-actions .button,
+.admin-page .inventory-actions .danger-button,
+.admin-page .row-actions .button,
+.admin-page .row-actions .danger-button {
+    font-size: 12px;
+    min-height: 36px;
+    padding: 0 10px;
+}
+
+.admin-page .orders-admin {
+    margin-top: 20px;
+}
+
+.admin-page .orders-admin .section-head {
+    align-items: center;
+    gap: 16px;
+}
+
+.admin-page .status-form {
+    min-width: 165px;
+}
+
+.admin-page .status-form select {
+    min-width: 0;
+    width: 100%;
+}
+
+.admin-page .delivery-admin { margin-top: 10px; min-width: 165px; }
+.admin-page .delivery-admin summary { color: var(--green-dark); cursor: pointer; font-size: 12px; font-weight: 800; }
+.admin-page .delivery-admin-form { display: grid; gap: 8px; margin-top: 10px; }
+.admin-page .delivery-admin-form label { color: var(--muted); display: grid; font-size: 11px; font-weight: 800; gap: 4px; }
+.admin-page .delivery-admin-form input,
+.admin-page .delivery-admin-form select { min-width: 0; width: 100%; }
+
+/* Login */
+.admin-page .admin-login {
+    margin: 45px auto;
+    max-width: 460px;
+    padding: 32px;
+}
+
+.admin-page .admin-login .stack-form {
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.admin-page .admin-login button {
+    width: 100%;
+}
+
+@media (max-width: 1050px) {
+    .admin-page .admin-workspace {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .admin-page .admin-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-page .admin-settings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-page .admin-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .admin-page .admin-topbar-inner {
+        min-height: 64px;
+    }
+
+    .admin-page .admin-shell {
+        padding-top: 26px;
+    }
+
+    .admin-page .admin-heading-actions {
+        width: 100%;
+    }
+
+    .admin-page .admin-heading-actions .button {
+        flex: 1;
+    }
+
+    .admin-page .admin-stats {
+        gap: 10px;
+    }
+
+    .admin-page .admin-stats article {
+        padding: 14px;
+    }
+
+    .admin-page .admin-stats strong {
+        font-size: 17px;
+    }
+
+    .admin-page .store-contact-form,
+    .admin-page .account-security-form,
+    .admin-page .book-editor,
+    .admin-page .inventory-panel,
+    .admin-page .orders-admin,
+    .admin-page .admin-login {
+        padding: 18px;
+    }
+
+    .admin-page .store-contact-form button,
+    .admin-page .account-security-form button {
+        justify-self: stretch;
+        width: 100%;
+    }
+
+    .admin-page .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-page .cover-control {
+        grid-template-columns: 70px minmax(0, 1fr);
+    }
+
+    .admin-page .orders-admin .section-head {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

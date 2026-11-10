@@ -1,0 +1,9 @@
+<?php
+
+// Copy this file to config.local.php, then fill it from Midtrans Dashboard.
+// Do not commit config.local.php or send its Server Key to anyone.
+return [
+    'midtrans_environment' => 'sandbox', // Change to production after QRIS activation.
+    'midtrans_server_key' => 'SB-Mid-server-PASTE-YOUR-KEY-HERE',
+    'midtrans_qris_acquirer' => 'gopay',
+];
